@@ -1,2 +1,4 @@
 # Estacade
 first project
+yellow: #fdbe3d
+black:  #221f1f

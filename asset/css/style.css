@@ -1,64 +1,205 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: 'Roboto', sans-serif;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul, li {
+  list-style: none;
+  display: block;
 }
-blockquote, q {
-	quotes: none;
+
+header > nav > ul > li{
+	height:50px;
+	line-height:50px;
+	padding:0 12px;
+	border-bottom:1px solid #777;
+	background:#111;
+	color: white;
+  }
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
-    scroll-behavior: smooth;
+  background-color: var(--main-color);
+  scroll-behavior: smooth;
 }
 
 .wrapper {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 :root {
-    --main-color: #221f1f;
-    --second-color: #fdbe3d;
-    --main-margin: 25px 2%;
+  --main-color: #231f20;
+  --second-color: #fdbe3d;
+  --main-margin: 25px 2%;
 }
 
 header {
-    height: 35px;
-    background: var(--main-color);
+  display: flex;
+  height: 120px;
+  background: var(--main-color);
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
 }
+/* css pour le menu burger */
+
+
+#menu-button{
+	position:absolute;
+	top:0;
+	right:0;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	background:#fff;
+	color:#000;
+	line-height:50px;
+	text-align:center;
+	font-size:40px;
+	cursor:pointer;
+	transition:all .5s;
+  }
+  
+  
+  #menu-button::after{
+	content:'×';
+  }
+  #menu-button.close{
+	color:#fff;
+	background:#000;
+  }
+  #menu-button.close::after{
+	content:'≡';
+  }
+  
+  #menu{
+	transition:transform .5s;
+	position:absolute;
+	width:100%;
+	max-width:480px;
+	transform:translateY(-300px);
+  
+  }
+  #menu.show-menu{
+	transform:translateY(51px);
+  }
+
+

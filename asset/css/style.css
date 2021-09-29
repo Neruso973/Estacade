@@ -168,6 +168,7 @@ header {
   
   
   #menu-button::after{
+    right: 0;
 	content:'×';
   }
   #menu-button.close{
@@ -185,17 +186,23 @@ header {
 	max-width:480px;
 	transform:translateY(-300px);
   right: 0;
-  z-index: 2;
+  
   }
   #menu.show-menu{
 	transform:translateY(51px);
   right: 0;
   top: 1px;
+  z-index: 2;
   }
+
+  /* responsive header*/
+
+  
 
   /* FIN HEADER */
 
 /* ACCUEIL */
+
 .slideAccueil ul {
 	border-radius: 15px;
 	box-shadow: var(--box-shadow);

@@ -1,91 +1,77 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: "Roboto", sans-serif;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+	list-style: none;
+	letter-spacing: 0.3px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+	background: var(--main-color);
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+:root {
+    --main-color: #231f20;
+    --second-color: #fdbe3d;
+	--color-title:white;
+    --main-margin: 25px 2%;
+	--box-shadow: 7px 7px 20px 8px black;
+	--colortxt :#dad8d9;
+	--filterplat : drop-shadow(5px 5px 5px black); 
+}
+
+header {
+    height: 35px;
+    background: var(--main-color);
+}
+
+* {
+	box-sizing: border-box ;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -104,8 +90,30 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul, li {
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+:root {
+  --main-color: #231f20;
+  --second-color: #fdbe3d;
+  --main-margin: 25px 2%;
+}
+
+/* HEADER */ 
+ol,ul, li {
   list-style: none;
   display: block;
 }
@@ -128,26 +136,6 @@ q:before,
 q:after {
   content: "";
   content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  background-color: var(--main-color);
-  scroll-behavior: smooth;
-}
-
-.wrapper {
-  width: 300px;
-  margin: 0 auto;
-}
-
-:root {
-  --main-color: #231f20;
-  --second-color: #fdbe3d;
-  --main-margin: 25px 2%;
 }
 
 header {
@@ -202,4 +190,198 @@ header {
 	transform:translateY(51px);
   }
 
+  /* FIN HEADER */
 
+/* ACCUEIL */
+
+.slideAccueil ul {
+	border-radius: 15px;
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.slideAccueil ul li {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 200px;
+}
+
+.slideAccueil img {
+	position: absolute;
+	z-index: 1;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 140%;
+}
+
+.texte-slide {
+	border-radius: 15px;
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.texte-slide  a {
+	color:var(--second-color);
+}
+
+.texte-slide h1 {
+	color: var(--color-title);
+	font-size: 24px;
+}
+
+.texte-slide h1::after {
+	content: "";
+	display: block;
+	height: 3px;
+	background: var(--second-color);
+	width: 35%;
+	border-radius: 2px;
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+
+.texte-slide  p {
+	color:var(--colortxt);
+	line-height: 20px;
+}
+
+.texte-slide  a {
+	color:var(--second-color);
+}
+
+.plat-jour {
+	position: relative;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+.plat-jour::after {
+	content: "";
+	width: 100%;
+	height: 150px;
+	background-color: var(--second-color);
+	position: absolute;
+	z-index: -1;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.plat-jour  .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.plat-jour img {
+	width: 200px;
+	margin-left: -20%;
+	filter:var(--filterplat);
+
+}
+
+.txt-plat-jour .title-jaune {
+	color: var(--second-color);
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 4px;
+	right: 0;
+}
+
+.txt-plat-jour {
+	text-align: right;
+}
+
+.txt-plat-jour p {
+	color:var(--main-color);
+	font-weight: 500;
+}
+
+.txt-plat-jour span {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.txt-plat-jour a {
+	background: var(--main-color);
+	border-radius: 20px;
+	line-height: 30px;
+	display: block;
+	text-align:center;
+	color:var(--second-color);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+
+.txt-plat-jour .price {
+	font-size: 20px;
+	margin:15px 0;
+	font-weight: 800;
+}
+
+.txt-accueil{
+	border-radius: 15px;
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+	margin-top: 25px;
+}
+
+.txt-accueil h2{
+	color: var(--color-title);
+	font-size: 24px;
+}
+
+.txt-accueil h2::after {
+	content: "";
+	display: block;
+	height: 3px;
+	background: var(--second-color);
+	width: 35%;
+	border-radius: 2px;
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+
+.txt-accueil   a {
+	color:var(--second-color);
+}
+
+.txt-accueil  p {
+	color:var(--colortxt);
+	line-height: 20px;
+}
+
+
+.img-txt{
+	border-radius: 15px;
+	box-shadow: var(--box-shadow);
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+.img-txt img {
+	position: absolute;
+	z-index: 1;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 140%;
+} 
+/* FIN ACCUEIL */

@@ -385,3 +385,42 @@ header {
 	width: 140%;
 } 
 /* FIN ACCUEIL */
+
+/* FOOTER */
+
+
+.foot {
+	color: var(--second-color);
+	height: auto;
+	text-align: center;
+	display: grid;
+	grid-template-areas:
+	  "a b"
+	  "c d";
+  }
+  
+  .f1 {
+	grid-area: a;
+	background: #1e1a1b;
+	padding: 1em 0 1em 0;
+  }
+  
+  .f2 {
+	grid-area: b;
+	background: #201c1d;
+	padding: 1em 0 1em 0;
+  }
+  
+  .f3 {
+	grid-area: c;
+	background: #201c1d;
+	padding: 1em 0 1em 0;
+  }
+  
+  .f4 {
+	grid-area: d;
+	background: #1e1a1b;
+	padding: 1em 0 1em 0;
+  }
+
+  /* FIN FOOTER */

@@ -444,4 +444,26 @@ footer img {
 width: 20%;
 }
 
-  /* FIN FOOTER */
+/* FIN FOOTER */
+
+  /* RESPONSIVE */
+
+  @media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 960px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+  /* FIN RESPONSIVE */

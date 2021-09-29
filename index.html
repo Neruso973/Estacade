@@ -4,35 +4,76 @@
   <meta charset="utf-8">
   <title>Restaurant L'Estacade</title>
   <link rel="stylesheet" href="asset/css/style.css">
-  
+  <script src="asset/js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="asset/img/logo-estacade.png" alt="Logo Restaurant L'Estacade"></a>
-        <div id="menu-button" class="close"></div>
-        <nav id="menu" class="">
+        <a href="index.html"><img src="asset/img/logo.png" alt="Logo Restaurant L'Estacade"></a>
+        <nav>
             <ul>
-                    <li>Accueil</li>
-                    <li>La carte</li>
-                    <li>A propos</li>
-                    <li>Contact</li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">La Carte</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="wrapper">
-
+        <div class="slideAccueil">
+            <ul>
+                <li>
+                    <img src="asset/img/diapo-06-large.jpg" alt="Intérieur Estacade">
+                </li>
+            </ul>
+            <div class="texte-slide">
+                <h1>L'Estacade</h1>
+                <p>L'Estacade est un restaurant à Bordeaux rive droite qui accueille tous les gastronomes et les amoureux des spécialités du Sud-Ouest. Venez découvrir dans <a href="apropos.html">un cadre convivial une cuisine raffinée</a> qui mêle avec brio les saveurs de la Méditerranée à ceux de l'Atlantique et le tout relevé avec des vins du sud.</p>
+            </div>
+        </div>
     </div>
-    <!-- <footer>
+    <div class="plat-jour">
+        <div class="wrapper">
+            <img src="asset/img/assiette1.png" alt="Plat Du Jour">
+            <div class="txt-plat-jour">
+                <p class="title-jaune">Plat du jour</p>
+                <div class="pj-interrieur">
+                    <p>Gambas tempura <span>purée de céleri et sa mayonnaise au wasabi</span></p>
+                    <p class="price">26€</p>
+                    <a href="menu.html">Voir la carte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <iframe width="300" height="169" src="https://www.youtube.com/embed/EnKUwf1H0Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="txt-accueil">
+            <h2>Un lieu unique à Bordeaux</h2>
+            <p>Le Restaurant l'Estacade est sur pilotis et fait face à la place de la Bourse et aux promenades au bord de la Garonne. Pendant le repas, vous pourrez profiter d'une vue imprenable, que ce soit en salle ou sur notre <strong>terrasse panoramique.</strong>
+            </br></br>
+                Venez savourer une cuisine préparée par notre chef avec des produits de saison et avec passion !
+            </p>
+        </div>
+        <div class="img-txt">
+            <img src="asset/img/restaurant-03.jpg" alt="Intérieur Estacade">
+        </div>
+        <div class="txt-accueil">
+            <h2>Une équipe de passionnés à votre service</h2>
+            <p>Le Restaurant l'Estacade, c'est toute une équipe à votre service pour vous présenter <a href="menu.html">une carte gourmande</a> et qui veillera à votre confort tout au long du repas. Le temps <strong>d'une pause déjeuner, d'un repas en famille ou d'un diner romantique,</strong> vous serez reçu dans un cadre somptueux et raffiné.
+            </br></br>
+                Pour réserver votre place au <strong>restaurant l'Estacade à Bordeaux rive droite</strong>, vous pouvez <a href=contact.html">prendre contact</a> avec notre équipe par téléphone ou via le formulaire de contact.
+            </p>
+        </div>
+    </div>
+    <footer>
         <ul>
             <li>Quai de Queyries</br>33100 Bordeaux</li>
             <li>Tél : 05 57 54  02 50</li>
             <li>Réseau</li>
             <li>Contactez-nous</li>
         </ul>
-    </footer> -->
-    <script src="asset/js/script.js"></script>
+    </footer>
 </body>
 </html>

@@ -388,6 +388,9 @@ header {
 
 /* FOOTER */
 
+footer {
+margin-top: 25px;
+}
 
 .foot {
 	color: var(--second-color);
@@ -422,5 +425,9 @@ header {
 	background: #1e1a1b;
 	padding: 1em 0 1em 0;
   }
+  
+	.f3 img {
+	margin: 0 10px;
+}
 
   /* FIN FOOTER */

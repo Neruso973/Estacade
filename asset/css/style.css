@@ -452,6 +452,9 @@ width: 20%;
 }
 
 @media screen and (min-width: 768px) {
+	#menu-button{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 960px) {

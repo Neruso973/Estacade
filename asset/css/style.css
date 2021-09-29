@@ -118,6 +118,10 @@ ol,ul, li {
   display: block;
 }
 
+header img {
+width: 60%;
+}
+
 header > nav > ul > li{
 	height:50px;
 	line-height:50px;
@@ -139,14 +143,21 @@ q:after {
 }
 
 header {
-  display: flex;
-  height: 120px;
-  background: var(--main-color);
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 10px;
-  margin-left: 10px;
+	display: flex;
+	height: 50px;
+	background: var(--main-color);
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
 }
+
+.headheight {
+	height: 50px;
+	margin-bottom: 25px;
+}
+
 /* css pour le menu burger */
 
 
@@ -180,19 +191,30 @@ header {
   }
   
   #menu{
-	transition:transform .5s;
-	position:absolute;
-	width:100%;
-	max-width:480px;
-	transform:translateY(-300px);
-  right: 0;
-  
+	transition: all .5s;
+	position: absolute;
+	width: 100%;
+	transform: translateX(100vw);
+	right: 0;
+	top:50px;
+	opacity: 0;
+	z-index: 2;
+	height: calc(100vh - 50px);
   }
   #menu.show-menu{
-	transform:translateY(51px);
-  right: 0;
-  top: 1px;
-  z-index: 2;
+	transform: translateX(0px);
+	background: var(--main-color);
+	opacity: 1;
+  }
+
+  #menu a {
+	  color:white;
+	  text-decoration: none;
+	  line-height: 40px;
+  }
+
+  #menu  li {
+	text-align: center;
   }
 
   /* responsive header*/

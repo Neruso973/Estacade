@@ -143,14 +143,18 @@ q:after {
 }
 
 header {
-	display: flex;
+	
 	height: 50px;
 	background: var(--main-color);
-	align-items: center;
-	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
+}
+
+header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between
 }
 
 .headheight {
@@ -470,7 +474,10 @@ width: 20%;
 
   /* RESPONSIVE */
 
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+	.wrapper {
+		width: 460px;
+	}
 }
 
 @media screen and (min-width: 768px) {

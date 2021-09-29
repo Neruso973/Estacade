@@ -383,6 +383,7 @@ header {
 	height: 200px;
 	overflow: hidden;
 	position: relative;
+	margin-top: 25px;
 }
 
 .img-txt img {
@@ -437,6 +438,10 @@ margin-top: 25px;
   
 	.f3 img {
 	margin: 0 10px;
+}
+
+footer img {
+width: 20%;
 }
 
   /* FIN FOOTER */

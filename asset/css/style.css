@@ -497,6 +497,51 @@ header .wrapper {
 }
 /* FIN ACCUEIL */
 
+/* CONTACT */
+
+.contactTitle {
+  padding: 25px 0 4px 0;
+  color: #ffffff
+}
+
+.yellowLine {
+  border: 2px solid #fdbe3d;
+  border-radius: 1px;
+  margin-bottom: 25px;
+}
+
+label {
+  color: #fff;
+}
+
+input {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #201c1d;
+}
+
+textarea {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #201c1d;
+  height: 150px;
+}
+
+.button {
+  background: #fdbe3d;
+  color: #000;
+}
+
+/* FIN CONTACT */
+
 /* FOOTER */
 
 footer {

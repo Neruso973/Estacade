@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Restaurant L'Estacade - Contact</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="asset/js/script.js"></script>
+  <link rel="stylesheet" href="asset/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+<!--    <header>
         <a href="index.html"><img src="asset/img/logo.png" alt="Logo Restaurant L'Estacade"></a>
         <nav>
             <ul>
@@ -20,17 +19,30 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header>-->
     <div class="wrapper">
-
+        <h2 class="contactTitle">CONTACT</h2>
+        <hr class="yellowLine">
+        <form id="contactForm">
+            <label for="lastName">Nom</label><br>
+            <input type="text" id="lastName" name="user_lastName" placeholder="Votre nom"><br>
+            <label for="firstName">Prénom</label><br>
+            <input type="text" id="firstName" name="user_firstName" placeholder="Votre prénom"><br>
+            <label for="mail">Email</label><br>
+            <input type="text" id="mail" name="user_mail" placeholder="exemple@gmail.com"><br>
+            <label for="message">Message</label><br>
+            <textarea type="text" id="message" name="user_message" placeholder="Votre message..."></textarea><br>
+            <input class="button" type="submit" value="ENVOYER"/>
+        </form>
     </div>
-    <footer>
+<!--    <footer>
         <ul>
             <li>Quai de Queyries</br>33100 Bordeaux</li>
             <li>Tél : 05 57 54  02 50</li>
             <li>Réseau</li>
             <li>Contactez-nous</li>
         </ul>
-    </footer>
+    </footer>-->
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

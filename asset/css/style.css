@@ -271,7 +271,7 @@ header .wrapper {
   transition: all 0.5s;
   position: absolute;
   width: 100vw;
-  transform: translateX(100vw);
+  transform: translateX(150vw);
   right: 50%;
   top: 50px;
   opacity: 0;
@@ -913,7 +913,7 @@ footer img {
 /* carte des menues*/
 .nav-food {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 75px;
 }
 button {

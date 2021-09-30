@@ -105,6 +105,7 @@ section {
 }
 body {
   line-height: 1;
+  scroll-behavior: smooth;
 }
 ol,
 ul {
@@ -169,16 +170,18 @@ section {
 }
 body {
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--main-color);
-  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -917,13 +920,15 @@ footer img {
   justify-content: space-between;
   padding-top: 75px;
 }
-button {
+.nav-food>a {
   background-color: var(--main-color);
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  color: var(--color-title);
+  color: var(--second-color);
   padding : 8px;
+  text-decoration:none;
+
 }
 .entrance, .meat, .fish, .dessert {
   display: flex;
@@ -949,6 +954,10 @@ button {
   display: flex;
   flex-direction: row;
 }
+.entrance >.card, .fish>.card{
+  display: flex;
+  justify-content: space-between;
+}
 .card { 
   background-color: var(--main-color);
   border: 1px solid black;
@@ -960,7 +969,6 @@ button {
   padding: 8px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
 }
 .card-name, .card-price {
   color: var(--second-color);
@@ -971,31 +979,4 @@ button {
   font-size: 0.4em;
   padding: 5px 5px 5px 10px;
   color: var(--color-title);
-}
-.day{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.day-dish {
-  color: var(--second-color);
-  font-size: 2.5em;
-  margin-bottom: -35px;
-}
-.day-card {
-  background-color: var(--second-color);
-  color: var(--color-title);
-}
-
-.day-card-name, .day-card-price {
-  font-size: 2em;
-  color: var(--color-title);
-  padding: 5px;
-  width: 90%;
-}
-.day-card-description {
-  font-size: 1.8em;
-  padding: 5px;
-  color: var(--color-title);
-  width: 75%;
 }

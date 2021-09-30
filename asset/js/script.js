@@ -1,3 +1,4 @@
+//set variables and const
 const cards = document.querySelector(".cards");
 const entrance = document.querySelector(".entrance");
 const meat = document.querySelector(".meat");
@@ -166,7 +167,7 @@ const chefMenu = [
     type: dessert,
     name: 'Formages',
     image: "",
-    description: 'La séléction de 3 fromages par  " Madame Fromage "',
+    description: 'La séléction de 3 fromages du jour',
     price: "10€",
   },
   {
@@ -199,7 +200,7 @@ const chefMenu = [
   },
 ];
 
-//function for create card
+//function for create card menu
 function createCard(type, name, image, description, price) {
 
   const card = document.createElement("div");
@@ -235,18 +236,4 @@ function createCard(type, name, image, description, price) {
 for (let i=0; i<chefMenu.length; i++) {
   createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price,);
 };
-
-//scroll smooth 
-function goEntrance() {
-  document.querySelector(".entrance")?.scrollIntoView({behavior: 'smooth'});
-}
-function goMeat() {
-  document.querySelector(".meat")?.scrollIntoView({behavior: 'smooth'});
-}
-function goFish() {
-  document.querySelector(".fish")?.scrollIntoView({behavior: 'smooth'});
-}
-function goDessert() {
-  document.querySelector(".dessert")?.scrollIntoView({behavior: 'smooth'}, );
-}
 

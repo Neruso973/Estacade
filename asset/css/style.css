@@ -592,3 +592,86 @@ footer img {
 @media screen and (min-width: 1920px) {
 }
 /* FIN RESPONSIVE */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: var(--main-color);
+  border: 1px solid black;
+  border-radius: 2àpx;
+  box-shadow: var(--box-shadow);
+  color: var(--color-title);
+}
+.entrance, .meat, .fish, .dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  color: var(--second-color);
+  font-size: 2em;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+}
+.card-image {
+  height: 177px;
+  width: 150px;
+  background-color: red;
+  margin-top: 5Opx;
+  
+}
+.card { 
+  background-color: var(--main-color);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  height: 175px;
+  width: 90%;
+  margin-top: 30px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.card-name, .card-price {
+  color: var(--second-color);
+  font-size: 1.2em;
+  padding: 10px;
+}
+.card-description {
+  font-size: 0.9em;
+  padding: 5px;
+  color: var(--color-title);
+}
+.day{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.day-dish {
+  color: var(--second-color);
+  font-size: 2.5em;
+  margin-bottom: -35px;
+}
+.day-card {
+  background-color: var(--second-color);
+  color: var(--color-title);
+}
+
+.day-card-name, .day-card-price {
+  font-size: 2em;
+  color: var(--color-title);
+  padding: 5px;
+  width: 90%;
+}
+.day-card-description {
+  font-size: 1.8em;
+  padding: 5px;
+  color: var(--color-title);
+  width: 75%;
+}
+

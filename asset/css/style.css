@@ -714,6 +714,14 @@ footer img {
     height: 709px !important;
     margin: 0 auto;
     display: block;
+}}
+/* FIN RESPONSIVE */
+
+
+/* carte des menues*/
+.nav-food {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 75px;
 }
 /* FIN RESPONSIVE */
-}

@@ -714,19 +714,23 @@ footer img {
     height: 709px !important;
     margin: 0 auto;
     display: block;
-}
+}}
 /* FIN RESPONSIVE */
 
-.nav-menu {
+
+/* carte des menues*/
+.nav-food {
   display: flex;
   justify-content: space-around;
+  padding-top: 75px;
 }
 button {
   background-color: var(--main-color);
   border: 1px solid black;
-  border-radius: 2àpx;
+  border-radius: 10px;
   box-shadow: var(--box-shadow);
   color: var(--color-title);
+  padding : 8px;
 }
 .entrance, .meat, .fish, .dessert {
   display: flex;
@@ -739,23 +743,27 @@ button {
 .cardBody {
   display: flex;
   flex-direction: column;
-  width: 70vh;
+  width: 75%;
 }
 .card-image {
-  height: 177px;
-  width: 150px;
+  height: 110px;
+  width: 25%;
   background-color: red;
   margin-top: 5Opx;
   
+}
+.meat > .card, .dessert > .card{
+  display: flex;
+  flex-direction: row;
 }
 .card { 
   background-color: var(--main-color);
   border: 1px solid black;
   border-radius: 15px;
   box-shadow: var(--box-shadow);
-  height: 175px;
-  width: 90%;
-  margin-top: 30px;
+  height: 130px;
+  width: 110%;
+  margin: 30px 0;
   padding: 8px;
   display: flex;
   flex-direction: row-reverse;
@@ -763,12 +771,12 @@ button {
 }
 .card-name, .card-price {
   color: var(--second-color);
-  font-size: 1.2em;
+  font-size: 0.6em;
   padding: 10px;
 }
 .card-description {
-  font-size: 0.9em;
-  padding: 5px;
+  font-size: 0.4em;
+  padding: 5px 5px 5px 10px;
   color: var(--color-title);
 }
 .day{
@@ -798,4 +806,3 @@ align-items: center;
   color: var(--color-title);
   width: 75%;
 }
-

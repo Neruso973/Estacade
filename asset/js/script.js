@@ -18,7 +18,7 @@ const chefMenu = [
   {
     type: entrance,
     name: 'Terrine de foie gras',
-    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-bnpqn&psig=AOvVaw3FOsEbaxO_RZBYSbe_JO2Y&ust=1633013319535000&source=images&cd=vfe&ved=0CAsQjRxqGAoTCJiHsei2pPMCFQAAAAAdAAAAABCNAQ",
+    image: "asset/img/assiette1.png",
     description: "foie gras de Canard aux pistaches et son pain toasté",
     price: "18€",
     container: entrance
@@ -76,7 +76,7 @@ const chefMenu = [
     type: meat,
     name: "Magret de Canard entier",
     image: "",
-    description: "gastrique de grenades et ses légumes de saison",
+    description: "et ses légumes de saison",
     price: "26€",
   },
   {
@@ -146,7 +146,7 @@ const chefMenu = [
     type: dessert,
     name: "Banofee",
     image: "",
-    description: 'en verrine façon " Estacade "',
+    description: 'verrine façon " Estacade "',
     price: "10€",
   },
   {

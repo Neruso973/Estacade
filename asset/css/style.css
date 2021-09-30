@@ -505,7 +505,8 @@ header .wrapper {
   grid-template-areas:
     "a c"
     "b d";
-    text-align: center;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .info1 {

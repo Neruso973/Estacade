@@ -229,7 +229,7 @@ header {
   background: var(--main-color);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 1000;
 }
 
 header .wrapper {
@@ -343,6 +343,81 @@ header .wrapper {
 
 /* ACCUEIL */
 
+.slider-container{
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.menu1 {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu1 label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  
+}
+
+.menu1 label:hover {
+  background: var(--second-color);
+}
+
+#slide-dot-1, #slide-dot-2, #slide-dot-3 {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+[id^="slide"]:checked + {
+  background-color: var(--second-color);
+}
+
+.slide-1 {
+  background-image: url("../img/diapo-06-large.jpg");
+}
+.slide-2 {
+  background-image: url("../img/restaurant-03.jpg");
+  background-size: 110%;
+}
+.slide-3 {
+  background-image: url("../img/restaurant-02.jpg");
+}
+
 .slideAccueil ul {
   border-radius: 15px;
   box-shadow: var(--box-shadow);
@@ -350,21 +425,9 @@ header .wrapper {
   overflow: hidden;
 }
 
-.slideAccueil ul li {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 200px;
-}
 
-.slideAccueil img {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 140%;
-}
+
+
 
 .texte-slide {
   border-radius: 15px;
@@ -700,7 +763,7 @@ footer img {
 		position: relative;
 	}
 
-	.slideAccueil ul li {
+	.slider-container {
 		height: 360px;
 	  }
 
@@ -798,6 +861,10 @@ footer img {
 @media screen and (min-width: 1280px) {
   .wrapper {
     width:1260px
+  }
+
+  .slider-container {
+    height: 480px;
   }
 
   iframe {

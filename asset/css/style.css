@@ -657,6 +657,9 @@ footer img {
   header > nav > ul > li {
     border-bottom: none;
   }
+  #menu.show-menu {
+    transform: none;
+  }
 }
 
 @media screen and (min-width: 960px) {

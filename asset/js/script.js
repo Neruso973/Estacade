@@ -4,8 +4,8 @@ const meat = document.querySelector(".meat");
 const fish = document.querySelector(".fish");
 const dessert = document.querySelector(".dessert");
 
-var menuButton = document.querySelector('#menu-button');
-var menu = document.querySelector('#menu');
+let menuButton = document.querySelector('#menu-button');
+let menu = document.querySelector('#menu');
 
 // show or hide
 menuButton.addEventListener('click',function(){
@@ -190,11 +190,12 @@ function createCard(type, name, image, description, price) {
   cardBody.appendChild(cardPrice);
 };
 
+//iterate cards in html
 for (let i=0; i<chefMenu.length; i++) {
   createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price,);
 };
 
-
+//scroll smooth 
 function goEntrance() {
   document.querySelector(".entrance")?.scrollIntoView({behavior: 'smooth'});
 }

@@ -499,6 +499,35 @@ header .wrapper {
 
 /* CONTACT */
 
+.infos {
+  color: #fdbe3d;
+  display: grid;
+  grid-template-areas:
+    "a c"
+    "b d";
+    text-align: center;
+}
+
+.info1 {
+  background: #1e1a1b;
+  grid-area: a;
+}
+
+.info2 {
+  background: #1e1a1b;
+  grid-area: b;
+}
+
+.infos3 {
+  background: #201c1d;
+  grid-area: c;
+}
+
+.infos4 {
+  background: #201c1d;
+  grid-area: d;
+}
+
 .contactTitle {
   padding: 25px 0 4px 0;
   color: #ffffff

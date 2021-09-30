@@ -147,7 +147,6 @@ body {
 }
 
 header {
-  height: 35px;
   background: var(--main-color);
 }
 
@@ -237,6 +236,8 @@ header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
+  position: relative;
 }
 
 .headheight {
@@ -249,11 +250,10 @@ header .wrapper {
 #menu-button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   width: 50px;
   height: 50px;
   overflow: hidden;
-  background: #fff;
   color: #000;
   line-height: 50px;
   text-align: center;
@@ -262,31 +262,24 @@ header .wrapper {
   transition: all 0.5s;
 }
 
-#menu-button::after {
-  right: 0;
-  content: "×";
-}
 #menu-button.close {
   color: #fff;
-  background: #000;
 }
-#menu-button.close::after {
-  content: "≡";
-}
+
 
 #menu {
   transition: all 0.5s;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   transform: translateX(100vw);
-  right: 0;
+  right: 50%;
   top: 50px;
   opacity: 0;
   z-index: 2;
   height: calc(100vh - 50px);
 }
 #menu.show-menu {
-  transform: translateX(0px);
+  transform: translateX(50%);
   background: var(--main-color);
   opacity: 1;
 }
@@ -301,6 +294,49 @@ header .wrapper {
   text-align: center;
 }
 
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: white;
+  border-radius: 2px;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
 /* responsive header*/
 
 /* FIN HEADER */
@@ -311,7 +347,6 @@ header .wrapper {
   border-radius: 15px;
   box-shadow: var(--box-shadow);
   width: 100%;
-  height: 200px;
   overflow: hidden;
 }
 
@@ -617,7 +652,7 @@ footer {
 }
 
 footer img {
-  width: 20%;
+  width: 45px;
 }
 
 /* FIN FOOTER */
@@ -628,9 +663,53 @@ footer img {
   .wrapper {
     width: 460px;
   }
+
+  iframe {
+	width: 460px !important;
+	height: 279px !important;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) {
+	.wrapper {
+		width: 748px;
+	  }
+	
+	  iframe {
+		width: 748px !important;
+		height: 449px !important;
+	  }
+
+	  .plat-jour .wrapper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
+	}
+
+	.slideAccueil ul li {
+		height: 360px;
+	  }
+
+	  .texte-slide, .txt-accueil {
+		  padding: 20px ;
+	  }
+
+	  .img-txt {
+		height: 360px;
+	  }
+
+	  .txt-plat-jour .title-jaune {
+		  top:34px;
+	  }
+
+	  .plat-jour img {
+		width: 260px;
+		margin-left: 0%;
+	  }
+
   #menu-button {
     display: none;
     transition: none;
@@ -653,17 +732,191 @@ footer img {
   header > nav > ul > li {
     border-bottom: none;
   }
+  #menu.show-menu {
+    transform: none;
+  }
 }
 
 @media screen and (min-width: 960px) {
+	.wrapper {
+		width: 940px;
+	  }
+	
+	  iframe {
+		width: 940px !important;
+		height: 525px !important;
+	  }
+
+	  .txt-plat-jour .title-jaune {
+		top:34px;
+		right:10%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
+	.wrapper {
+		width: 1004px;
+	  }
+	
+	  iframe {
+		width: 1004px !important;
+		height: 525px !important;
+	  }
+
+	  .txt-plat-jour .title-jaune {
+		top:34px;
+		right:10%;
+	}
+
+	.texte-slide {
+		position: absolute;
+		top: 50%;
+		z-index: 1;
+		background-color: rgba(35, 31, 32,0.9);
+		width: 40%;
+		right: 10%;
+		transform: translateY(-50%);
+		margin-top: 0;
+	}
+
+	.slideAccueil {
+		position: relative;
+	}
 }
 
 @media screen and (min-width: 1280px) {
+  .wrapper {
+    width:1260px
+  }
+
+  iframe {
+    width: 1260px !important;
+    height: 709px !important;
+  }
+  .foot {
+    grid-template-areas: "a b c d";
+  }
+
+  .containaccueil {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plat-jour .wrapper {
+    width: 600px;
+    justify-content: space-between;
+  }
+
+  .txt-plat-jour .title-jaune {
+    top: 34px;
+    right: 0;
+  }
+
+  .img-txt {
+    margin: 25px 2% 0;
+  }
+
 }
 
 @media screen and (min-width: 1920px) {
-}
+  .wrapper {
+    width:1900px
+  }
+
+  iframe {
+    width: 1260px !important;
+    height: 709px !important;
+    margin: 0 auto;
+    display: block;
+}}
 /* FIN RESPONSIVE */
+
+
+/* carte des menues*/
+.nav-food {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 75px;
+}
+button {
+  background-color: var(--main-color);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-title);
+  padding : 8px;
+}
+.entrance, .meat, .fish, .dessert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  color: var(--second-color);
+  font-size: 2em;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.card-image {
+  height: 110px;
+  width: 25%;
+  background-color: red;
+  margin-top: 5Opx;
+  
+}
+.meat > .card, .dessert > .card{
+  display: flex;
+  flex-direction: row;
+}
+.card { 
+  background-color: var(--main-color);
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  height: 130px;
+  width: 130%;
+  margin: 30px 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.card-name, .card-price {
+  color: var(--second-color);
+  font-size: 0.6em;
+  padding: 10px;
+}
+.card-description {
+  font-size: 0.4em;
+  padding: 5px 5px 5px 10px;
+  color: var(--color-title);
+}
+.day{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.day-dish {
+  color: var(--second-color);
+  font-size: 2.5em;
+  margin-bottom: -35px;
+}
+.day-card {
+  background-color: var(--second-color);
+  color: var(--color-title);
+}
+
+.day-card-name, .day-card-price {
+  font-size: 2em;
+  color: var(--color-title);
+  padding: 5px;
+  width: 90%;
+}
+.day-card-description {
+  font-size: 1.8em;
+  padding: 5px;
+  color: var(--color-title);
+  width: 75%;
+}

@@ -8,12 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <div class="wrapper">
             <a href="index.html"><img src="asset/img/logo-estacade.png" alt="Logo Restaurant L'Estacade"></a>
-            <div id="menu-button" class="close"></div>
+            
+            <div id="menu-button" class="menu close" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </div>
             <nav id="menu" class="">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -53,22 +61,24 @@
     </div>
     <div class="wrapper">
         <iframe width="300" height="169" src="https://www.youtube.com/embed/EnKUwf1H0Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="txt-accueil">
-            <h2>Un lieu unique à Bordeaux</h2>
-            <p>Le Restaurant l'Estacade est sur pilotis et fait face à la place de la Bourse et aux promenades au bord de la Garonne. Pendant le repas, vous pourrez profiter d'une vue imprenable, que ce soit en salle ou sur notre <strong>terrasse panoramique.</strong>
-            </br></br>
-            Venez savourer une cuisine préparée par notre chef avec des produits de saison et avec passion !
-            </p>
-        </div>
-        <div class="img-txt">
-            <img src="asset/img/restaurant-03.jpg" alt="Intérieur Estacade">
-        </div>
-        <div class="txt-accueil">
-            <h2>Une équipe de passionnés à votre service</h2>
-            <p>Le Restaurant l'Estacade, c'est toute une équipe à votre service pour vous présenter <a href="menu.html">une carte gourmande</a> et qui veillera à votre confort tout au long du repas. Le temps <strong>d'une pause déjeuner, d'un repas en famille ou d'un diner romantique,</strong> vous serez reçu dans un cadre somptueux et raffiné.
-            </br></br>
-                Pour réserver votre place au <strong>restaurant l'Estacade à Bordeaux rive droite</strong>, vous pouvez <a href=contact.html">prendre contact</a> avec notre équipe par téléphone ou via le formulaire de contact.
-            </p>
+        <div class="containaccueil">
+            <div class="txt-accueil">
+                <h2>Un lieu unique à Bordeaux</h2>
+                <p>Le Restaurant l'Estacade est sur pilotis et fait face à la place de la Bourse et aux promenades au bord de la Garonne. Pendant le repas, vous pourrez profiter d'une vue imprenable, que ce soit en salle ou sur notre <strong>terrasse panoramique.</strong>
+                </br></br>
+                Venez savourer une cuisine préparée par notre chef avec des produits de saison et avec passion !
+                </p>
+            </div>
+            <div class="img-txt">
+                <img src="asset/img/restaurant-03.jpg" alt="Intérieur Estacade">
+            </div>
+            <div class="txt-accueil">
+                <h2>Une équipe de passionnés à votre service</h2>
+                <p>Le Restaurant l'Estacade, c'est toute une équipe à votre service pour vous présenter <a href="menu.html">une carte gourmande</a> et qui veillera à votre confort tout au long du repas. Le temps <strong>d'une pause déjeuner, d'un repas en famille ou d'un diner romantique,</strong> vous serez reçu dans un cadre somptueux et raffiné.
+                </br></br>
+                    Pour réserver votre place au <strong>restaurant l'Estacade à Bordeaux rive droite</strong>, vous pouvez <a href=contact.html">prendre contact</a> avec notre équipe par téléphone ou via le formulaire de contact.
+                </p>
+            </div>
         </div>
     </div>
     <footer>

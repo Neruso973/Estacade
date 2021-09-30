@@ -25,7 +25,7 @@ const chefMenu = [
   },
   {
     type: entrance,
-    name: 'Tataki de thon',
+    name: 'Tataki de saumon',
     image: "",
     description: "avec wakame au sésame",
     price: "20€",
@@ -206,5 +206,5 @@ function goFish() {
   document.querySelector(".fish")?.scrollIntoView({behavior: 'smooth'});
 }
 function goDessert() {
-  document.querySelector(".dessert")?.scrollIntoView({behavior: 'smooth'});
+  document.querySelector(".dessert")?.scrollIntoView({behavior: 'smooth'}, );
 }

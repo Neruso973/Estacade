@@ -68,7 +68,7 @@ const chefMenu = [
   {
     type: entrance,
     name: 'Tataki de saumon',
-    image: "",
+    image: "asset/img/tataki.png",
     description: "avec wakame au sésame",
     price: "20€",
   },
@@ -117,7 +117,7 @@ const chefMenu = [
   {
     type: meat,
     name: "Magret de Canard entier",
-    image: "",
+    image: "asset/img/magret.png",
     description: "et ses légumes de saison",
     price: "26€",
   },
@@ -207,8 +207,8 @@ function createCard(type, name, image, description, price) {
   card.classList.add("card");
   type.appendChild(card);
   
-  const cardImg = document.createElement("div");
-  cardImg.style.backgroundImage = `url(${image})`;
+  const cardImg = document.createElement("img");
+  cardImg.src = `${image}`;
   cardImg.classList.add("card-image");
   card.appendChild(cardImg);
 
@@ -237,13 +237,12 @@ for (let i=0; i<chefMenu.length; i++) {
   createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price,);
 };
 
-
 //function to stop scoll nav-food
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	let element = document.querySelector(".nav-food");
-	if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) 
+	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) 
 	{
 		element.classList.add("scroll");
 	} 

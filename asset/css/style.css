@@ -986,7 +986,11 @@ div.carousel-nav{
   width: 10px;
   background-color: #fdbe3d ;
   margin: 0 3px;
+  opacity: 50%;
 
+}
+.carousel-indicator.current-slide{
+opacity: 100%;
 }
 
 /* RESPONSIVE */

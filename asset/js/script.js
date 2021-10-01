@@ -236,3 +236,19 @@ function createCard(type, name, image, description, price) {
 for (let i=0; i<chefMenu.length; i++) {
   createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price,);
 };
+
+
+//function to stop scoll nav-food
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	let element = document.querySelector(".nav-food");
+	if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) 
+	{
+		element.classList.add("scroll");
+	} 
+	else 
+	{
+		element.classList.remove("scroll");
+	}
+}

@@ -207,8 +207,8 @@ function createCard(type, name, image, description, price) {
   card.classList.add("card");
   type.appendChild(card);
   
-  const cardImg = document.createElement("div");
-  cardImg.style.backgroundImage = `url(${image})`;
+  const cardImg = document.createElement("img");
+  cardImg.src = `${image}`;
   cardImg.classList.add("card-image");
   card.appendChild(cardImg);
 

@@ -732,6 +732,7 @@ input {
   border: none;
   margin-top: 10px;
   position: relative;
+  color: #ffffff;
 }
 
 textarea {
@@ -745,11 +746,19 @@ textarea {
   height: 150px;
   border: none;
   margin-top: 10px;
+  color: #ffffff;
 }
 
 .button {
   background: #fdbe3d;
   color: #000;
+  font-weight: bold;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #b3862b;
 }
 
 /* FIN CONTACT */

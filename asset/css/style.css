@@ -1094,7 +1094,7 @@ footer img {
 	.texte-slide {
 		position: absolute;
 		top: 50%;
-		z-index: 1;
+		z-index: 999;
 		background-color: rgba(35, 31, 32,0.9);
 		width: 40%;
 		right: 10%;

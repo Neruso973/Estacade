@@ -1070,11 +1070,6 @@ div.carousel-nav {
     height: 525px !important;
   }
 
-<<<<<<< HEAD
-  .txt-plat-jour .title-jaune {
-    top: 34px;
-    right: 10%;
-=======
 	  .txt-plat-jour .title-jaune {
 		top:34px;
 		right:10%;
@@ -1153,41 +1148,10 @@ div.carousel-nav {
     justify-content: space-between;
     position: fixed;
     z-index: 999;
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
   }
 }
 
 @media screen and (min-width: 1024px) {
-<<<<<<< HEAD
-  .wrapper {
-    width: 1004px;
-  }
-
-  iframe {
-    width: 1004px !important;
-    height: 525px !important;
-  }
-
-  .txt-plat-jour .title-jaune {
-    top: 34px;
-    right: 10%;
-  }
-
-  .texte-slide {
-    position: absolute;
-    top: 50%;
-    z-index: 999;
-    background-color: rgba(35, 31, 32, 0.9);
-    width: 40%;
-    right: 10%;
-    transform: translateY(-50%);
-    margin-top: 0;
-  }
-
-  .slideAccueil {
-    position: relative;
-  }
-=======
 	.wrapper {
 		width: 1004px;
 	  }
@@ -1297,7 +1261,6 @@ div.carousel-nav {
   width: 100%;
   z-index: 999;
 }
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
 }
 
 @media screen and (min-width: 1280px) {
@@ -1335,64 +1298,6 @@ div.carousel-nav {
   .img-txt {
     margin: 25px 2% 0;
   }
-<<<<<<< HEAD
-=======
-  .nav-food {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    padding-top: 50px;
-  }
-  .nav-food>a {
-    background-color: var(--main-color);
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    color: var(--second-color);
-    padding : 12px 157px;
-    text-decoration:none;
-    height: 40px;
-    width: 20%;
-  }  
-  .dish-title {
-    width: 100%;
-    font-size: 2em;
-  }
-  .entrance, .meat, .fish, .dessert {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px 0;
-    color: var(--second-color);
-    font-size: 2em;
-  }
-.card { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--main-color);
-    box-shadow: var(--box-shadow);
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 600px;
-    width: 33%;
-    margin: 50px 50px;
-   
-  }
-  .meat > .card, .dessert > .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.card-body {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  height: 50%;
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
 }
 .card-image {
   height: 40%;
@@ -1449,20 +1354,11 @@ div.carousel-nav {
     text-decoration: none;
     height: 40px;
     width: 20%;
-<<<<<<< HEAD
   }
   .entrance,
   .meat,
   .fish,
   .dessert {
-=======
-  }  
-  .dish-title {
-    width: 100%;
-    font-size: 2em;
-  }
-  .entrance, .meat, .fish, .dessert {
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1482,12 +1378,7 @@ div.carousel-nav {
     border-radius: 15px;
     height: 600px;
     width: 25%;
-<<<<<<< HEAD
     margin: 50px 20px;
-=======
-    margin: 50px 50px;
-   
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
   }
   .meat > .card,
   .dessert > .card {
@@ -1495,7 +1386,6 @@ div.carousel-nav {
     flex-direction: column;
     align-items: center;
   }
-<<<<<<< HEAD
   .card-body {
     display: flex;
     flex-direction: column;
@@ -1527,30 +1417,5 @@ div.carousel-nav {
     width: 100%;
     z-index: 999;
   }
-=======
-.card-body {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  height: 50%;
-}
-.card-image {
-  height: 40%;
-  width: 75%;    
-  background-size: 150%;
-  background-repeat: no-repeat;
-  margin-top: 5Opx;
-}
-.card-name, .card-price {
-  color: var(--second-color);
-  font-size: 1.3em;
-  margin: 10px 0;
-  width: 335px;
-}
-.card-description {
-  font-size: 0.9em;
-  padding: 5px 5px 5px 10px;
-  color: var(--color-title);
->>>>>>> 4aff391f9a1b212dd2106c79812582e1cf02e0f0
 }
 /* FIN RESPONSIVE */

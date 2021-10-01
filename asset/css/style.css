@@ -1281,12 +1281,11 @@ div.carousel-nav {
     margin: 10px 0;
     width: 335px;
   }
-<<<<<<< HEAD
   .card-description {
     font-size: 0.9em;
     padding: 5px 5px 5px 10px;
     color: var(--color-title);
-=======
+  }
 .card { 
     display: flex;
     flex-direction: column;
@@ -1299,7 +1298,6 @@ div.carousel-nav {
     width: 27%;
     margin: 50px 50px;
    
->>>>>>> menu
   }
   .scroll {
     display: flex;

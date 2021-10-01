@@ -732,6 +732,7 @@ input {
   border: none;
   margin-top: 10px;
   position: relative;
+  color: #ffffff;
 }
 
 textarea {
@@ -745,11 +746,19 @@ textarea {
   height: 150px;
   border: none;
   margin-top: 10px;
+  color: #ffffff;
 }
 
 .button {
   background: #fdbe3d;
   color: #000;
+  font-weight: bold;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #b3862b;
 }
 
 /* FIN CONTACT */
@@ -1072,7 +1081,7 @@ button.carousel-button-felix.arrow-left{
 	.texte-slide {
 		position: absolute;
 		top: 50%;
-		z-index: 1;
+		z-index: 999;
 		background-color: rgba(35, 31, 32,0.9);
 		width: 40%;
 		right: 10%;

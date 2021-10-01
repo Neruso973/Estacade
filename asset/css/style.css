@@ -717,7 +717,6 @@ input {
   border: none;
   margin-top: 10px;
   position: relative;
-  color: #ffffff;
 }
 
 textarea {
@@ -731,19 +730,11 @@ textarea {
   height: 150px;
   border: none;
   margin-top: 10px;
-  color: #ffffff;
 }
 
 .button {
   background: #fdbe3d;
   color: #000;
-  font-weight: bold;
-  transition: background 0.5s;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: #b3862b;
 }
 
 /* FIN CONTACT */
@@ -819,7 +810,6 @@ footer img {
   display: flex;
   justify-content: space-between;
   padding-top: 75px;
-  position: fixed;
 }
 .nav-food > a {
   background-color: var(--main-color);
@@ -887,31 +877,6 @@ footer img {
   font-size: 0.4em;
   padding: 5px 5px 5px 10px;
   color: var(--color-title);
-}
-.scroll {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 75px;
-  position: fixed;
-  width: 100%;
-}
-/* FIN MENU */
-
-/* CAROUSSEL */
-
-.carousel-felix {
-  position: relative;
-  height: 170px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.carousel-track-container {
-  top: 4px;
-  background-color: #fdbe3d;
-  height: 100%;
-  position: relative;
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
 }
 
 .carousel-track {
@@ -1340,92 +1305,6 @@ div.carousel-nav {
     height: 709px !important;
     margin: 0 auto;
     display: block;
-  }
-
-  .nav-food {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    padding-top: 50px;
-  }
-  .nav-food > a {
-    background-color: var(--main-color);
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    color: var(--second-color);
-    padding: 12px 157px;
-    text-decoration: none;
-    height: 40px;
-    width: 20%;
-  }
-
-  .dish-title {
-    width: 100%;
-    font-size: 2em;
-  }
-  .entrance,
-  .meat,
-  .fish,
-  .dessert {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 0;
-    color: var(--second-color);
-    font-size: 2em;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--main-color);
-    box-shadow: var(--box-shadow);
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 600px;
-    width: 25%;
-    margin: 50px 20px;
-  }
-  .meat > .card,
-  .dessert > .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 50%;
-  }
-  .card-image {
-    height: 110px;
-    width: 75%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    margin-top: 5opx;
-  }
-  .card-name,
-  .card-price {
-    color: var(--second-color);
-    font-size: 1.3em;
-    width: 300px;
-  }
-  .card-description {
-    font-size: 0.9em;
-    padding: 5px 5px 5px 10px;
-    color: var(--color-title);
-  }
-  .scroll {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
   }
 }
 /* FIN RESPONSIVE */

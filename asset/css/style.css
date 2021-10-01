@@ -1185,6 +1185,10 @@ footer img {
     height: 40px;
     width: 20%;
   }  
+  .dish-title {
+    width: 100%;
+    font-size: 2em;
+  }
   .entrance, .meat, .fish, .dessert {
     display: flex;
     flex-wrap: wrap;
@@ -1205,7 +1209,7 @@ footer img {
     border-radius: 15px;
     height: 600px;
     width: 25%;
-    margin: 50px 20px;
+    margin: 50px 50px;
    
   }
   .meat > .card, .dessert > .card{
@@ -1216,11 +1220,11 @@ footer img {
 .card-body {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 75%;
   height: 50%;
 }
 .card-image {
-  height: 110px;
+  height: 40%;
   width: 75%;    
   background-size: 150%;
   background-repeat: no-repeat;
@@ -1229,7 +1233,8 @@ footer img {
 .card-name, .card-price {
   color: var(--second-color);
   font-size: 1.3em;
-  width: 300px;
+  margin: 10px 0;
+  width: 335px;
 }
 .card-description {
   font-size: 0.9em;

@@ -769,6 +769,15 @@ footer {
     "a b"
     "c d";
 }
+.foot a
+ {
+
+  display: block;
+  color: var(--second-color);
+  text-decoration: none;
+
+}
+
 
 .f1 {
   grid-area: a;
@@ -795,11 +804,22 @@ footer {
 }
 
 .f3 img {
-  margin: 0 10px;
+  margin: 0 10px 15px;
 }
 
 footer img {
   width: 45px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+.foot .f3 img {
+  display: inline-block;
+  vertical-align:middle ;
+}
+.foot li {
+  text-align:center;
 }
 
 /* FIN FOOTER */

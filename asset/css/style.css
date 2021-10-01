@@ -1323,7 +1323,7 @@ div.carousel-nav {
   position: fixed;
   width: 100%;
   z-index: 999;
-}}
+}
 
 @media screen and (min-width: 1920px) {
   .wrapper {

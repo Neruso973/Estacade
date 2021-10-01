@@ -930,10 +930,10 @@ footer img {
   font-size: 2em;
   padding-top: 150px;
 }
-.cardBody {
+.card-body {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 66%;
 }
 .card-image {
   height: 110px;
@@ -1189,26 +1189,43 @@ footer img {
 .card { 
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--main-color);
     box-shadow: var(--box-shadow);
     border: 1px solid black;
     border-radius: 15px;
-    height: 300px;
-    width: 15%;
+    height: 600px;
+    width: 25%;
     margin: 50px 20px;
    
   }
-.cardBody {
+  .meat > .card, .dessert > .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.card-body {
   display: flex;
   flex-direction: column;
   width: 60%;
+  height: 50%;
 }
 .card-image {
   height: 110px;
-  width: 25%;    
+  width: 75%;    
   background-size: 150%;
   background-repeat: no-repeat;
   margin-top: 5Opx;
+}
+.card-name, .card-price {
+  color: var(--second-color);
+  font-size: 1.3em;
+  width: 300px;
+}
+.card-description {
+  font-size: 0.9em;
+  padding: 5px 5px 5px 10px;
+  color: var(--color-title);
 }
 .scroll {
   display: flex;

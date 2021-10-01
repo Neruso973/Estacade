@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Restaurant L'Estacade - Contact</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="asset/js/script.js"></script>
+  <title>Restaurant L'Estacade</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -33,15 +33,39 @@
         </div>
     </header>
     <div class="wrapper">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.9207197529477!2d-0.5668879840330682!3d44.843547879098644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527d4c0882c9d%3A0x35d3b7a24ef32e5e!2sL&#39;Estacade!5e0!3m2!1sfr!2sfr!4v1633006791793!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="wrapper">
+        <ul class="infos">
+            <li class="info1">Quai de Queyries</br>33100 Bordeaux</li>
+            <li class="info2">7 jours sur 7</br>de 12h à 14h</br>et de 19h30 à 23h</li>
+            <li class="info3">Tél : 05 57 54  02 50</li>
+            <li class="info4">Réservation</br>uniquement</br></br>Par téléphone</br>de 10h30 à minuit</li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <h2 class="contactTitle">CONTACT</h2>
+        <hr class="yellowLine">
+        <form id="contactForm">
+            <label for="lastName">Nom</label>
+            <input type="text" id="lastName" name="user_lastName" placeholder="Votre nom">
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" name="user_firstName" placeholder="Votre prénom">
+            <label for="mail">Email</label>
+            <input type="text" id="mail" name="user_mail" placeholder="exemple@gmail.com">
+            <label for="message">Message</label>
+            <textarea type="text" id="message" name="user_message" placeholder="Votre message..."></textarea>
+            <input class="button" type="submit" value="ENVOYER"/>
+        </form>
     </div>
     <footer>
-        <ul>
-            <li>Quai de Queyries</br>33100 Bordeaux</li>
-            <li>Tél : 05 57 54  02 50</li>
-            <li>Réseau</li>
-            <li>Contactez-nous</li>
+        <ul class = foot>
+            <li class = "f1"><img src="asset/img/pin.png" ></br></br>Quai de Queyries</br>33100 Bordeaux</li>
+            <li class = "f2"><img src="asset/img/telephone.png" ></br></br>Tél : 05 57 54  02 50</li>
+            <li class = "f3"><img src="asset/img/facebook.png" ><img src="asset/img/instagram.png" ></br></br>Réseau</li>
+            <li class = "f4"><img src="asset/img/mail.png"></br></br>Contactez-nous</li>
         </ul>
     </footer>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

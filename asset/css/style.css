@@ -1083,6 +1083,81 @@ footer img {
 		top:34px;
 		right:10%;
 	}
+  .nav-food {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 50px;
+  }
+  .nav-food>a {
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: var(--second-color);
+    padding : 5px;
+    text-decoration:none;
+  
+  }
+  .entrance, .meat, .fish, .dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    color: var(--second-color);
+    font-size: 2em;
+    padding-top: 150px;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card-image {
+    height: 90%;
+    width: 33%;    
+    background-size: 150%;
+    background-repeat: no-repeat;
+    margin-top: 5Opx;
+  }
+  .meat > .card, .dessert > .card{
+    display: flex;
+    flex-direction: row;
+  }
+  .entrance >.card, .fish>.card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card { 
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    height: 200px;
+    width: 90%;
+    margin: 50px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .card-name, .card-price {
+    color: var(--second-color);
+    font-size: 1em;
+    margin: 15px;
+    width: 66%;
+  }
+  .card-description {
+    font-size: 0.8em;
+    padding: 5px 5px 5px 10px;
+    color: var(--color-title);
+  }
+  .scroll {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1114,6 +1189,87 @@ footer img {
 	.slideAccueil {
 		position: relative;
 	}
+  .nav-food {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+  }
+  .nav-food>a {
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: var(--second-color);
+    padding : 12px 157px;
+    text-decoration:none;
+    height: 40px;
+    width: 20%;
+  }  
+  .dish-title {
+    width: 100%;
+    font-size: 2em;
+  }
+  .entrance, .meat, .fish, .dessert {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    color: var(--second-color);
+    font-size: 2em;
+  }
+.card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 600px;
+    width: 33%;
+    margin: 50px 50px;
+   
+  }
+  .meat > .card, .dessert > .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 50%;
+}
+.card-image {
+  height: 40%;
+  width: 75%;    
+  background-size: 150%;
+  background-repeat: no-repeat;
+  margin-top: 5Opx;
+}
+.card-name, .card-price {
+  color: var(--second-color);
+  font-size: 1.3em;
+  margin: 10px 0;
+  width: 335px;
+}
+.card-description {
+  font-size: 0.9em;
+  padding: 5px 5px 5px 10px;
+  color: var(--color-title);
+}
+.scroll {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 }
 
 @media screen and (min-width: 1280px) {
@@ -1151,8 +1307,87 @@ footer img {
   .img-txt {
     margin: 25px 2% 0;
   }
-
+  .nav-food {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+  }
+  .nav-food>a {
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: var(--second-color);
+    padding : 12px 157px;
+    text-decoration:none;
+    height: 40px;
+    width: 20%;
+  }  
+  .dish-title {
+    width: 100%;
+    font-size: 2em;
+  }
+  .entrance, .meat, .fish, .dessert {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    color: var(--second-color);
+    font-size: 2em;
+  }
+.card { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 600px;
+    width: 33%;
+    margin: 50px 50px;
+   
+  }
+  .meat > .card, .dessert > .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 50%;
 }
+.card-image {
+  height: 40%;
+  width: 75%;    
+  background-size: 150%;
+  background-repeat: no-repeat;
+  margin-top: 5Opx;
+}
+.card-name, .card-price {
+  color: var(--second-color);
+  font-size: 1.3em;
+  margin: 10px 0;
+  width: 335px;
+}
+.card-description {
+  font-size: 0.9em;
+  padding: 5px 5px 5px 10px;
+  color: var(--color-title);
+}
+.scroll {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}}
 
 @media screen and (min-width: 1920px) {
   .wrapper {

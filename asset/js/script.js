@@ -230,24 +230,20 @@ function createCard(type, name, image, description, price) {
     cardBody.appendChild(cardPrice);
 };
 
-<<<<<<< HEAD
 // iterate cards in html
 chefMenu.forEach(function(menu) {
-  createCard(menu.type, menu.name, menu.image, menu.description, menu.price,);
+    createCard(menu.type, menu.name, menu.image, menu.description, menu.price, );
 })
 
 //function to stop scoll nav-food
 window.onscroll = function scrollFunction() {
-	let element = document.querySelector(".nav-food");
+    let element = document.querySelector(".nav-food");
 
-	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) 
-	{
-		element.classList.add("scroll");
-	} 
-	else 
-	{
-		element.classList.remove("scroll");
-	}
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        element.classList.add("scroll");
+    } else {
+        element.classList.remove("scroll");
+    }
 }
 
 //jscript à propos carousel//
@@ -262,7 +258,6 @@ const dots = Array.from('dotsNav.children');
 //right click
 
 //nav indicators click
-=======
 //iterate cards in html
 for (let i = 0; i < chefMenu.length; i++) {
     createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price, );
@@ -279,4 +274,3 @@ function scrollFunction() {
         element.classList.remove("scroll");
     }
 }
->>>>>>> menu

@@ -913,19 +913,24 @@ footer img {
   height: 100%;
   position: relative;
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  overflow: hidden;
 }
 
 .carousel-track {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 175ms ease-in;
+  width: 100%;
 }
 
 .carousel-slide {
   position: absolute;
   top: 18px;
   bottom: 0;
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-size: 12px;
   left: 10%;
@@ -971,10 +976,15 @@ div.carousel-nav {
   background-color: #fdbe3d;
   margin: 0 3px;
   opacity: 50%;
+  cursor: pointer;
 }
 .carousel-indicator.current-slide {
   opacity: 100% ;
 }
+
+
+
+.is-hidden {display: none;};
 
 /* RESPONSIVE */
 

@@ -856,8 +856,12 @@ footer img {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     color: var(--second-color);
-    padding: 8px;
     text-decoration: none;
+    height: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .entrance,
@@ -871,12 +875,6 @@ footer img {
     color: var(--second-color);
     font-size: 2em;
     padding-top: 75px;
-}
-
-.cardBody {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
 }
 
 .card-image {
@@ -913,6 +911,10 @@ footer img {
     flex-direction: row-reverse;
 }
 
+.card-body {
+    width: 60%;
+}
+
 .card-name,
 .card-price {
     color: var(--second-color);
@@ -925,6 +927,18 @@ footer img {
     padding: 5px 5px 5px 10px;
     color: var(--color-title);
 }
+
+.scroll {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding-top: 50px;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* fin menu */
 
 .carousel-track {
     padding: 0;
@@ -1059,6 +1073,52 @@ div.carousel-nav {
     #menu.show-menu {
         transform: none;
     }
+    .card-body {
+        height: 90%;
+        width: 60%;
+    }
+    .card-image {
+        height: 90%;
+        width: 33%;
+        background-size: 150%;
+        background-repeat: no-repeat;
+        margin-top: 5opx;
+    }
+    .meat>.card,
+    .dessert>.card {
+        display: flex;
+        flex-direction: row;
+    }
+    .entrance>.card,
+    .fish>.card {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card {
+        background-color: var(--main-color);
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: var(--box-shadow);
+        height: 175px;
+        width: 90%;
+        margin: 50px 0;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .card-name,
+    .card-price {
+        color: var(--second-color);
+        font-size: 0.8em;
+        margin: 6px;
+        width: 66%;
+    }
+    .card-description {
+        font-size: 0.6em;
+        padding: 5px 5px 5px 15px;
+        color: var(--color-title);
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -1090,8 +1150,12 @@ div.carousel-nav {
         border-radius: 10px;
         box-shadow: var(--box-shadow);
         color: var(--second-color);
-        padding: 5px;
         text-decoration: none;
+        height: 40px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .entrance,
     .meat,
@@ -1106,9 +1170,8 @@ div.carousel-nav {
         padding-top: 150px;
     }
     .card-body {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        height: 90%;
+        width: 60%;
     }
     .card-image {
         height: 90%;
@@ -1144,18 +1207,20 @@ div.carousel-nav {
     .card-price {
         color: var(--second-color);
         font-size: 1em;
-        margin: 15px;
+        margin: 10px;
         width: 66%;
     }
     .card-description {
         font-size: 0.8em;
-        padding: 5px 5px 5px 10px;
+        padding: 5px 5px 5px 15px;
         color: var(--color-title);
     }
     .scroll {
         display: flex;
         justify-content: space-between;
         position: fixed;
+        padding-top: 50px;
+        width: 100%;
         z-index: 999;
     }
 }
@@ -1187,7 +1252,7 @@ div.carousel-nav {
     }
     .nav-food {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         padding-top: 50px;
@@ -1198,10 +1263,12 @@ div.carousel-nav {
         border-radius: 10px;
         box-shadow: var(--box-shadow);
         color: var(--second-color);
-        padding: 12px 157px;
         text-decoration: none;
         height: 40px;
         width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .dish-title {
         width: 100%;
@@ -1242,21 +1309,21 @@ div.carousel-nav {
     .card-body {
         display: flex;
         flex-direction: column;
-        width: 75%;
-        height: 50%;
+        width: 100%;
+        height: 60%;
     }
     .card-image {
         height: 40%;
         width: 75%;
         background-size: 150%;
         background-repeat: no-repeat;
-        margin-top: 5opx;
+        margin-top: 5px;
     }
     .card-name,
     .card-price {
         color: var(--second-color);
-        font-size: 1.3em;
-        margin: 10px 0;
+        font-size: 1.2em;
+        padding: 17px 0;
         width: 335px;
     }
     .card-description {
@@ -1264,9 +1331,12 @@ div.carousel-nav {
         padding: 5px 5px 5px 10px;
         color: var(--color-title);
     }
+    .card-price {
+        margin-left: 70%;
+    }
     .scroll {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         position: fixed;
         width: 100%;
         z-index: 999;
@@ -1312,19 +1382,26 @@ div.carousel-nav {
         width: 75%;
         background-size: 150%;
         background-repeat: no-repeat;
-        margin-top: 5opx;
+        margin-top: 5px;
+    }
+    .card-body {
+        height: 60%;
+        width: 100%;
     }
     .card-name,
     .card-price {
         color: var(--second-color);
-        font-size: 1.3em;
-        margin: 10px 0;
+        font-size: 1.2em;
+        margin: 8px 15%;
         width: 335px;
     }
     .card-description {
         font-size: 0.9em;
-        padding: 5px 5px 5px 10px;
+        padding: 5px 5px 5px 15px;
         color: var(--color-title);
+    }
+    .card-price {
+        margin-left: 80%;
     }
     .card {
         display: flex;
@@ -1369,15 +1446,22 @@ div.carousel-nav {
         background-repeat: no-repeat;
         margin-top: 5opx;
     }
+    .card-body {
+        height: 60%;
+        width: 90%;
+    }
     .card-name,
     .card-price {
         color: var(--second-color);
-        font-size: 1.3em;
-        margin: 10px 0;
+        font-size: 1.4em;
+        margin: 30px 25%;
         width: 335px;
     }
+    .card-price {
+        margin-left: 80%;
+    }
     .card-description {
-        font-size: 0.9em;
+        font-size: 1em;
         padding: 5px 5px 5px 10px;
         color: var(--color-title);
     }
@@ -1390,12 +1474,12 @@ div.carousel-nav {
         border: 1px solid black;
         border-radius: 15px;
         height: 600px;
-        width: 27%;
+        width: 22%;
         margin: 50px 50px;
     }
     .scroll {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         position: fixed;
         width: 100%;
         z-index: 999;

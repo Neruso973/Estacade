@@ -263,3 +263,16 @@ const dots = Array.from('dotsNav.children');
 //right click
 
 //nav indicators click
+
+//contact form display msg
+
+const close = document.getElementById('buttonClose');
+const open = document.getElementById('buttonOpen');
+
+close.addEventListener('click', () => {
+  document.getElementById('formMessage').style.display = 'none';
+});
+
+open.addEventListener('click', () => {
+  document.getElementById('formMessage').style.display = 'block';
+});

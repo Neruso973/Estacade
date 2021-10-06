@@ -1,130 +1,131 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Restaurant L'Estacade</title>
-    <link rel="stylesheet" href="asset/css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="asset/js/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <a href="index.html"><img src="asset/img/logo-estacade.png" alt="Logo
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant L'Estacade</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="asset/js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <a href="index.html"><img src="asset/img/logo-estacade.png" alt="Logo
             Restaurant L'Estacade"></a>
 
-        <div id="menu-button" class="menu close"
-          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded',
+      <div id="menu-button" class="menu close" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded',
           this.classList.contains('opened'))" aria-label="Main Menu">
-          <svg width="50" height="50" viewBox="0 0 100 100">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C
               80.000231,29.000046 94.498839,28.817352 94.532987,66.711331
               94.543142,77.980673 90.966081,81.670246 85.259173,81.668997
               79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L
               25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C
                   80.000231,70.999954 94.498839,71.182648 94.532987,33.288669
                   94.543142,22.019327 90.966081,18.329754 85.259173,18.331003
                   79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L
                   25.000021,74.999942" />
-                </svg>
-              </div>
-              <nav id="menu" class="">
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="menu.html">La Carte</a></li>
-                  <li><a href="apropos.html">A propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-          <div class="nav-food">
-            <a href="#entre">
-              ENTRÉES
-            </a>
-            <a href="#viande">
-              VIANDES
-            </a>
-            <a href="#poisson">
-              POISSONS
-            </a>
-            <a href="#dessert">
-              DESSERTS
-            </a>
+        </svg>
+      </div>
+      <nav id="menu" class="">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-food">
+    <a href="#entre">
+      ENTRÉES
+    </a>
+    <a href="#viande">
+      VIANDES
+    </a>
+    <a href="#poisson">
+      POISSONS
+    </a>
+    <a href="#dessert">
+      DESSERTS
+    </a>
+  </div>
+  <div class="headheight"></div>
+  <div class="carousel">
+    <div class="slideAccueil">
+      <div class="slider-container">
+        <div class="menu1">
+          <label for="slide-dot-1"></label>
+          <label for="slide-dot-2"></label>
+          <label for="slide-dot-3"></label>
+        </div>
+
+        <input id="slide-dot-1" type="radio" name="slides" checked>
+        <div class="slide slide-1"></div>
+
+        <input id="slide-dot-2" type="radio" name="slides">
+        <div class="slide slide-2"></div>
+
+        <input id="slide-dot-3" type="radio" name="slides">
+        <div class="slide slide-3"></div>
+      </div>
+    </div>
+    <div class="headheight"></div>
+    <div class="plat-jour">
+      <div class="wrapper">
+        <img src="asset/img/assiette1.png" alt="Plat Du Jour">
+        <div class="txt-plat-jour">
+          <p class="title-jaune">Plat du jour</p>
+          <div class="pj-interrieur">
+            <p>Gambas tempura <span>purée de céleri et sa mayonnaise au
+                wasabi</span></p>
+            <p class="price">26€</p>
           </div>
-          <div class="headheight"></div>
-          <div class="carousel">
-            <div class="slideAccueil">
-              <div class="slider-container">
-                <div class="menu1">
-                  <label for="slide-dot-1"></label>
-                  <label for="slide-dot-2"></label>
-                  <label for="slide-dot-3"></label>
-                </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="cards">
+        <div class="entrance" id="entre">
+          <h2 class="dish-title">ENTRÉES</h2>
+        </div>
+        <div class="meat" id="viande">
+          <h2 class="dish-title">VIANDES</h2>
+        </div>
+        <div class="fish" id="poisson">
+          <h2 class="dish-title">POISSONS</h2>
+        </div>
+        <div class="dessert" id="dessert">
+          <h2 class="dish-title">DESSERTS</h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class=foot>
+        <li class="f1"><img src="asset/img/pin.png">
+          <p>Quai de Queyries</br>33100 Bordeaux</p>
+        </li>
+        <li class="f2"><img src="asset/img/telephone.png">
+          <p>Tél : 05 57 54 02 50
+        </li>
+        <li class="f3"><img src="asset/img/facebook.png"><img src="asset/img/instagram.png">
+          <p>Réseau</p>
+        </li>
+        <li class="f4"><a href=""><img src="asset/img/mail.png">Contactez-nous</a></li>
+      </ul>
+      <p class="copyright">© 2021 Tous droits réservés HungryBoiz</p>
+    </footer>
+</body>
 
-                <input id="slide-dot-1" type="radio" name="slides" checked>
-                <div class="slide slide-1"></div>
-
-                <input id="slide-dot-2" type="radio" name="slides">
-                <div class="slide slide-2"></div>
-
-                <input id="slide-dot-3" type="radio" name="slides">
-                <div class="slide slide-3"></div>
-              </div>
-            </div>
-            <div class="headheight"></div>
-            <div class="plat-jour">
-              <div class="wrapper">
-                <img src="asset/img/assiette1.png" alt="Plat Du Jour">
-                <div class="txt-plat-jour">
-                  <p class="title-jaune">Plat du jour</p>
-                  <div class="pj-interrieur">
-                    <p>Gambas tempura <span>purée de céleri et sa mayonnaise au
-                        wasabi</span></p>
-                    <p class="price">26€</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <section>
-              <div class="cards">
-                <div class="entrance" id="entre">
-                  <h2 class="dish-title">ENTRÉES</h2>
-                </div>
-                <div class="meat" id="viande">
-                  <h2 class="dish-title">VIANDES</h2>
-                </div>
-                <div class="fish" id="poisson">
-                  <h2 class="dish-title">POISSONS</h2>
-                </div>
-                <div class="dessert" id="dessert">
-                  <h2 class="dish-title">DESSERTS</h2>
-                </div>
-              </div>
-            </section>
-            <footer>
-              <ul class=foot>
-                <li class="f1"><img src="asset/img/pin.png">
-                  <p>Quai de Queyries</br>33100 Bordeaux</p>
-              </li>
-              <li class="f2"><img src="asset/img/telephone.png">
-                <p>Tél : 05 57 54 02 50
-                </li>
-                <li class="f3"><img src="asset/img/facebook.png"><img
-                    src="asset/img/instagram.png">
-                  <p>Réseau</p>
-                </li>
-                <li class="f4"><a href=""><img src="asset/img/mail.png">Contactez-nous</a></li>
-              </ul>
-            </footer>
-          </body>
-
-        </html>
+</html>

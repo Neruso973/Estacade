@@ -1,11 +1,11 @@
 // modal function
-const open = document.getElementById('open-modal');
-const close = document.getElementById('close-modal');
+const open = document.getElementById('buttonOpen');
+const close = document.getElementById('buttonClose');
 
 open.addEventListener('click', () => {
-    document.getElementById('modal').style.display = 'block';
+    document.getElementById('formMessage').style.display = 'block';
 });
 
 close.addEventListener('click', () => {
-    document.getElementById('modal').style.display = 'none';
+    document.getElementById('formMessage').style.display = 'none';
 });

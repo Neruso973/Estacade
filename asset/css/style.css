@@ -796,9 +796,9 @@ iframe {
 
 label {
     color: #fff;
-}
-
-input {
+  }
+  
+  input {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     width: 100%;
@@ -810,30 +810,61 @@ input {
     margin-top: 10px;
     position: relative;
     color: #ffffff;
-}
-
-textarea {
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    width: 100%;
-    padding: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    background: #201c1d;
-    height: 150px;
-    border: none;
-    margin-top: 10px;
-    color: #ffffff;
-}
-
-.buttonOpen:hover {
+  }
+  
+  textarea {
+      border-radius: 10px;
+      box-shadow: var(--box-shadow);
+      width: 100%;
+      padding: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background: #201c1d;
+      height: 150px;
+      border: none;
+      margin-top: 10px;
+      color: #ffffff;
+  }
+  
+  .buttonOpen {
+    background: #fdbe3d;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.5s;
+    cursor: pointer;
+  }
+  
+  .buttonOpen:hover {
     background: #b3862b;
-}
-
-.formMessage {
+  }
+  
+  .formMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     display: none;
+  }
+
+.formMessage-inner {
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    color: var(--second-color);
+    text-align: center;
 }
 
+.buttonClose {
+    margin-top: 30px;
+    width: 25%;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fdbe3d;
+}
 
 /* FIN CONTACT */
 
@@ -1221,45 +1252,6 @@ div.carousel-nav {
 
 
 /* fin menu */
-
-
-/* modal */
-
-.open-modal {
-    background: #fdbe3d;
-    color: #000;
-    font-weight: bold;
-    transition: background 0.5s;
-    cursor: pointer;
-    border-radius: 10px;
-    width: 100%;
-    padding-left: 40%;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-}
-
-.modal-inner {
-    margin-top: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 3em;
-    color: var(--second-color);
-}
-
-.close-modal {
-    margin-top: 30px;
-    width: 25%;
-    border-radius: 10px;
-}
 
 
 /* RESPONSIVE */
@@ -1652,6 +1644,9 @@ div.carousel-nav {
         }
         .content-carousel {
             margin-top: 15px;
+        }
+        .formMessage-inner {
+            margin-top: 30%;
         }
     }
     @media screen and (min-width: 1280px) {

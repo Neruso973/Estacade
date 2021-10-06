@@ -8,7 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,7 +19,9 @@
         <div class="wrapper">
             <a href="index.html"><img src="asset/img/logo-estacade.png" alt="Logo Restaurant L'Estacade"></a>
 
-            <div id="menu-button" class="menu close" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <div id="menu-button" class="menu close"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                aria-label="Main Menu">
                 <svg width="50" height="50" viewBox="0 0 100 100">
                     <path class="line line1"
                         d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -37,7 +41,8 @@
         </div>
     </header>
     <div class="wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.9207197529477!2d-0.5668879840330682!3d44.843547879098644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527d4c0882c9d%3A0x35d3b7a24ef32e5e!2sL&#39;Estacade!5e0!3m2!1sfr!2sfr!4v1633006791793!5m2!1sfr!2sfr"
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.9207197529477!2d-0.5668879840330682!3d44.843547879098644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527d4c0882c9d%3A0x35d3b7a24ef32e5e!2sL&#39;Estacade!5e0!3m2!1sfr!2sfr!4v1633006791793!5m2!1sfr!2sfr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="wrapper">
@@ -71,11 +76,11 @@
                 <label for="message">Message</label>
                 <textarea type="text" id="message" name="user_message" placeholder="Votre message..."></textarea>
             </div>
-            <a class="open-modal" id="open-modal">Open modal</a>
-            <div id="modal" class="modal">
-                <div class="modal-inner content center">
-                    <p>Votre message à bien été envoyé!</p>
-                    <button class="close-modal" id="close-modal">Ok!</button>
+            <input class="buttonOpen" id="buttonOpen" type="button" value="ENVOYER" />
+            <div class="formMessage" id="formMessage">
+                <div class="formMessage-inner">
+                    <h2>Votre message a bien été envoyé !</h2>
+                    <input class="buttonClose" id="buttonClose" type="button" value="X">
                 </div>
             </div>
     </div>
@@ -98,6 +103,7 @@
         </ul>
         <p class="copyright">© 2021 Tous droits réservés HungryBoiz</p>
     </footer>
+    <script src="asset/js/script.js"></script>
     <script src="asset/js/modal.js"></script>
 </body>
 

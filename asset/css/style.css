@@ -958,7 +958,6 @@ footer img {
   bottom: 0;
   text-align: center;
   font-size: 12px;
-  left: 10%;
 }
 
 .carousel-button-felix {
@@ -1007,8 +1006,16 @@ div.carousel-nav {
   opacity: 100% ;
 }
 
-
-
+.title-reviews{
+    font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 15px; font-weight: bold;
+}
+.txt-reviews{
+    line-height: ;
+}
+.content-carousel{
+    margin-bottom: 8px;
+    
+}
 .is-hidden {display: none;};
 
 /* RESPONSIVE */
@@ -1138,6 +1145,10 @@ div.carousel-nav {
     iframe {
         width: 460px !important;
         height: 279px !important;
+    }
+    .txt-reviews{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 

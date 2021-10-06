@@ -250,13 +250,3 @@ window.onscroll = function scrollFunction() {
 
 //contact form display msg
 
-const close = document.getElementById('buttonClose');
-const open = document.getElementById('buttonOpen');
-
-close.addEventListener('click', () => {
-  document.getElementById('formMessage').style.display = 'none';
-});
-
-open.addEventListener('click', () => {
-  document.getElementById('formMessage').style.display = 'block';
-});

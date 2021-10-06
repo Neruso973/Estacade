@@ -701,7 +701,7 @@ iframe {
   grid-template-areas:
     "a c"
     "b d";
-  margin-top: 20px;
+  margin-top: 45px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -774,6 +774,7 @@ textarea {
     height: 150px;
     border: none;
     margin-top: 10px;
+    color: #ffffff;
 }
 
 .buttonOpen {
@@ -786,10 +787,6 @@ textarea {
 
 .buttonOpen:hover {
   background: #b3862b;
-}
-
-.formMessage {
-  display: none;
 }
 
 /* FIN CONTACT */

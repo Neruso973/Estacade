@@ -247,17 +247,3 @@ window.onscroll = function scrollFunction() {
         element.classList.remove("scroll");
     }
 }
-
-
-
-//contact form display msg
-const openMsg = document.getElementById('buttonOpen');
-const closeMsg = document.getElementById('buttonClose');
-
-openMsg.addEventListener('click', () => {
-  document.getElementById('formMessage').style.display = 'block';
-});
-
-closeMsg.addEventListener('click', () => {
-  document.getElementById('formMessage').style.display = 'none';
-});

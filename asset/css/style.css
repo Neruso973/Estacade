@@ -1018,23 +1018,6 @@ div.carousel-nav {
 }
 .is-hidden {display: none;};
 
-/* RESPONSIVE */
-
-@media screen and (min-width: 480px) {
-  .wrapper {
-    width: 460px;
-  }
-
-  iframe {
-    width: 460px !important;
-    height: 279px !important;
-  }
-}
-
-
-/* FIN FOOTER */
-
-
 /* MENU */
 
 .nav-food {

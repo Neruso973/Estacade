@@ -822,6 +822,10 @@ textarea {
   background: #b3862b;
 }
 
+.formMessage {
+    display: none;
+}
+
 /* FIN CONTACT */
 
 /* FOOTER */

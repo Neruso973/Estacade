@@ -246,3 +246,28 @@ window.onscroll = function scrollFunction() {
     }
 }
 
+//jscript à propos carousel//
+
+const track = document.querySelector('.carousel-track');
+const nextButton = document.querySelector('.carousel-button-felix.arrow-right');
+const previousBUtton = document.querySelector('.carousel-button-felix.arrow-left');;
+const dotsNav = document.querySelector('.carousel-nav');
+const dots = Array.from('dotsNav.children');
+// left click
+
+//right click
+
+//nav indicators click
+
+//contact form display msg
+
+const close = document.getElementById('buttonClose');
+const open = document.getElementById('buttonOpen');
+
+close.addEventListener('click', () => {
+  document.getElementById('formMessage').style.display = 'none';
+});
+
+open.addEventListener('click', () => {
+  document.getElementById('formMessage').style.display = 'block';
+});

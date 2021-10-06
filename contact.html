@@ -48,7 +48,7 @@
     <div class="wrapper">
         <ul class="infos">
             <li class="info1">Quai de Queyries</br>33100 Bordeaux</li>
-            <li class="info2">7 jours sur 7</br>de 12h à 14h</br>et de 19h30 à 23h</li>
+            <li class="info2"></br>7 jours sur 7</br>de 12h à 14h</br>et de 19h30 à 23h</br></li>
             <li class="info3">Tél : 05 57 54 02 50</li>
             <li class="info4">Réservation</br>uniquement</br></br>Par téléphone</br>de 10h30 à minuit</li>
         </ul>
@@ -56,16 +56,29 @@
     <div class="wrapper">
         <h2 class="contactTitle">CONTACT</h2>
         <hr class="yellowLine">
-        <form id="contactForm">
-            <label for="lastName">Nom</label>
-            <input type="text" id="lastName" name="user_lastName" placeholder="Votre nom">
-            <label for="firstName">Prénom</label>
-            <input type="text" id="firstName" name="user_firstName" placeholder="Votre prénom">
-            <label for="mail">Email</label>
-            <input type="text" id="mail" name="user_mail" placeholder="exemple@gmail.com">
-            <label for="message">Message</label>
-            <textarea type="text" id="message" name="user_message" placeholder="Votre message..."></textarea>
-            <input class="button" type="submit" value="ENVOYER" />
+        <form class="contactForm" id="contactForm">
+            <div class="lastNameForm">
+                <label for="lastName">Nom</label>
+                <input type="text" id="lastName" name="user_lastName" placeholder="Votre nom">
+            </div>
+            <div class="firstNameForm">
+                <label for="firstName">Prénom</label>
+                <input type="text" id="firstName" name="user_firstName" placeholder="Votre prénom">
+            </div>
+            <div class="mailForm">
+                <label for="mail">Email</label>
+                <input type="text" id="mail" name="user_mail" placeholder="exemple@gmail.com">
+            </div>
+            <div class="messageForm">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" name="user_message" placeholder="Votre message..."></textarea>
+            </div>
+            <input class="buttonOpen" type="submit" value="ENVOYER" />
+            <div id="formMessage" class="formMessage">
+                <div id="formMessage-inner"></div>
+                <button id="buttonClose">x</button>
+                <h2>Message envoyé</h2>
+            </div>
         </form>
     </div>
     <footer>
@@ -81,6 +94,7 @@
             </li>
             <li class="f4"><a href=""><img src="asset/img/mail.png">Contactez-nous</a></li>
         </ul>
+        <p class="copyright">© 2021 Tous droits réservés HungryBoiz</p>
     </footer>
     <script src="asset/js/script.js"></script>
 </body>

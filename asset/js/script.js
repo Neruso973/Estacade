@@ -3,7 +3,6 @@ const entrance = document.querySelector(".entrance");
 const meat = document.querySelector(".meat");
 const fish = document.querySelector(".fish");
 const dessert = document.querySelector(".dessert");
-
 let menuButton = document.querySelector('#menu-button');
 let menu = document.querySelector('#menu');
 
@@ -53,6 +52,9 @@ menuButton.addEventListener('click', function() {
     menu.classList.toggle('show-menu');
     menuButton.classList.toggle('close');
 });
+
+//hover menubuttons
+
 
 // table of Menu
 const chefMenu = [{

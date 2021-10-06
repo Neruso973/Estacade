@@ -734,7 +734,7 @@ iframe {
   grid-template-areas:
     "a c"
     "b d";
-  margin-top: 20px;
+  margin-top: 45px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -797,16 +797,17 @@ input {
 }
 
 textarea {
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  width: 100%;
-  padding: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: #201c1d;
-  height: 150px;
-  border: none;
-  margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    padding: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #201c1d;
+    height: 150px;
+    border: none;
+    margin-top: 10px;
+    color: #ffffff;
 }
 
 .buttonOpen {
@@ -819,10 +820,6 @@ textarea {
 
 .buttonOpen:hover {
   background: #b3862b;
-}
-
-.formMessage {
-  display: none;
 }
 
 /* FIN CONTACT */

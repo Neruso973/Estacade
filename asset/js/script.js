@@ -246,31 +246,3 @@ window.onscroll = function scrollFunction() {
     }
 }
 
-//jscript à propos carousel//
-
-const track = document.querySelector('.carousel-track');
-const nextButton = document.querySelector('.carousel-button-felix.arrow-right');
-const previousBUtton = document.querySelector('.carousel-button-felix.arrow-left');;
-const dotsNav = document.querySelector('.carousel-nav');
-const dots = Array.from('dotsNav.children');
-// left click
-
-//right click
-
-//nav indicators click
-//iterate cards in html
-for (let i = 0; i < chefMenu.length; i++) {
-    createCard(chefMenu[i].type, chefMenu[i].name, chefMenu[i].image, chefMenu[i].description, chefMenu[i].price, );
-};
-
-//function to stop scoll nav-food
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    let element = document.querySelector(".nav-food");
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        element.classList.add("scroll");
-    } else {
-        element.classList.remove("scroll");
-    }
-}

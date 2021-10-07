@@ -864,7 +864,15 @@ label {
     border-radius: 10px;
     font-size: 25px;
     color: #fdbe3d;
+    font-weight: bold;
+    transition: background 0.5s;
+    cursor: pointer;
 }
+
+.buttonClose:hover {
+    background: #1e1a1b;
+    color:#b3862b;
+  }
 
 /* FIN CONTACT */
 

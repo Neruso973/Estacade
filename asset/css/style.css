@@ -849,7 +849,7 @@ label {
   }
 
 .formMessage-inner {
-    margin-top: 40%;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1644,9 +1644,6 @@ div.carousel-nav {
         }
         .content-carousel {
             margin-top: 15px;
-        }
-        .formMessage-inner {
-            margin-top: 30%;
         }
     }
     @media screen and (min-width: 1280px) {

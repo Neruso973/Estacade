@@ -238,7 +238,16 @@ header .wrapper {
     margin-bottom: 25px;
 }
 
+.headheightMenu {
+    height: 125px;
+    margin-bottom: 25px;
+}
 
+.height-menu {
+    height: 25px;
+}
+
+.height-menu
 /* css pour le menu burger */
 
 #menu-button {
@@ -991,7 +1000,6 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
     color: var(--second-color);
     font-size: 2em;
     padding-top: 75px;
@@ -1218,7 +1226,6 @@ div.carousel-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
     color: var(--second-color);
     font-size: 2em;
     padding-top: 75px;
@@ -1458,7 +1465,6 @@ div.carousel-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 50px 0;
         color: var(--second-color);
         font-size: 2em;
         padding-top: 150px;
@@ -1580,7 +1586,6 @@ div.carousel-nav {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin: 50px 0;
             color: var(--second-color);
             font-size: 2em;
         }

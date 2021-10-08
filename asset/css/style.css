@@ -1053,7 +1053,7 @@ footer img {
 
 .carousel-felix {
     position: relative;
-    height: 170px;
+    height: 210px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1080,7 +1080,7 @@ footer img {
 .carousel-slide {
     width: 100%;
     position: absolute;
-    top: 18px;
+    top: 0px;
     bottom: 0;
     text-align: center;
     font-size: 12px;
@@ -1162,6 +1162,14 @@ div.carousel-nav {
     display: none;
 }
 
+
+.wrapperCarousel {
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
 
 /* MENU */
 
@@ -1745,7 +1753,7 @@ div.carousel-nav {
         }
         .marginResponsive {
             margin-right: 20px;
-        }
+        } 
         .marginResponsive2 {
             margin-left: 10px;
         }

@@ -96,7 +96,7 @@ const chefMenu = [{
     {
         type: meat,
         name: 'Ris de Veau poêlés',
-        image: "asset/img/assiettes/ris.png",
+        image: "asset/img/assiettes/risdeveau.png",
         description: "sauce morilles, polenta crémeuse au mascarpone",
         price: "26€",
     },

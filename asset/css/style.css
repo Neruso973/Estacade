@@ -244,7 +244,7 @@ header .wrapper {
 }
 
 .height-menu {
-    height: 25px;
+    height: 50px;
 }
 
 .height-menu
@@ -1011,7 +1011,6 @@ footer img {
     width: 60%;
 }
 
-
 .meat>.card,
 .dessert>.card {
     display: flex;
@@ -1053,7 +1052,6 @@ footer img {
 
 .scroll {
     display: flex;
-   
     padding-top: 75px;
     position: fixed;
     width: 100%;
@@ -1194,7 +1192,6 @@ div.carousel-nav {
 
 .nav-food {
     display: flex;
-
     padding-top: 65px;
     width: 100%;
     font-size: 12px;
@@ -1214,10 +1211,7 @@ div.carousel-nav {
     align-items: center;
 }
 
-
-
 .card-image {
-  
     width: 35%;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -1427,7 +1421,6 @@ div.carousel-nav {
     }
     .nav-food {
         display: flex;
-       
         position: relative;
         padding-top: 65px;
     }
@@ -1458,11 +1451,9 @@ div.carousel-nav {
         height: 90%;
         width: 60%;
     }
-
-    .nav-food > a {
+    .nav-food>a {
         font-size: 16px;
     }
-
     .card-image {
         height: 90%;
         width: 33%;
@@ -1541,7 +1532,6 @@ div.carousel-nav {
         }
         .nav-food {
             display: flex;
-           
             align-items: center;
             position: relative;
             padding-top: 65px;
@@ -1611,7 +1601,7 @@ div.carousel-nav {
         .card-name,
         .card-price {
             color: var(--second-color);
-           font-size: 0.8em;
+            font-size: 0.8em;
             padding: 17px 0;
             width: 335px;
         }
@@ -1624,7 +1614,6 @@ div.carousel-nav {
         }
         .scroll {
             display: flex;
-           
             position: fixed;
             width: 100%;
             z-index: 999;
@@ -1780,11 +1769,8 @@ div.carousel-nav {
             margin: 0 auto;
             display: block;
         }
-
-       
         .scroll {
             display: flex;
-            
             position: fixed;
             width: 100%;
             z-index: 999;

@@ -110,7 +110,7 @@ const chefMenu = [{
     {
         type: meat,
         name: 'filet de Veau rôtie',
-        image: "asset/img/assiettes/veau.png",
+        image: "asset/img/assiettes/veau1.png",
         description: "déclinaison de carottes ",
         price: "26€",
     },

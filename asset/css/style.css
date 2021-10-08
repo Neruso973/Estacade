@@ -563,6 +563,19 @@ nav.shift ul li a:hover:after {
     background-image: url("../img/restaurant-02.jpg");
 }
 
+.slide-4 {
+    background-image: url("../img/slider-1.png");
+}
+
+.slide-5 {
+    background-image: url("../img/slider-2.png");
+    background-size: 110%;
+}
+
+.slide-6 {
+    background-image: url("../img/slider-3.png");
+}
+
 .slideAccueil ul {
     border-radius: 15px;
     box-shadow: var(--box-shadow);
@@ -796,9 +809,9 @@ iframe {
 
 label {
     color: #fff;
-  }
-  
-  input {
+}
+
+input {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     width: 100%;
@@ -810,35 +823,35 @@ label {
     margin-top: 10px;
     position: relative;
     color: #ffffff;
-  }
-  
-  textarea {
-      border-radius: 10px;
-      box-shadow: var(--box-shadow);
-      width: 100%;
-      padding: 8px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      background: #201c1d;
-      height: 150px;
-      border: none;
-      margin-top: 10px;
-      color: #ffffff;
-  }
-  
-  .buttonOpen {
+}
+
+textarea {
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    padding: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #201c1d;
+    height: 150px;
+    border: none;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.buttonOpen {
     background: #fdbe3d;
     color: #000;
     font-weight: bold;
     transition: background 0.5s;
     cursor: pointer;
-  }
-  
-  .buttonOpen:hover {
+}
+
+.buttonOpen:hover {
     background: #b3862b;
-  }
-  
-  .formMessage {
+}
+
+.formMessage {
     position: fixed;
     top: 0;
     left: 0;
@@ -846,7 +859,7 @@ label {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     display: none;
-  }
+}
 
 .formMessage-inner {
     margin-top: 40%;
@@ -865,6 +878,7 @@ label {
     font-size: 25px;
     color: #fdbe3d;
 }
+
 
 /* FIN CONTACT */
 
@@ -1156,6 +1170,11 @@ div.carousel-nav {
 
 
 /* MENU */
+
+.slide-menu {
+    width: 90%;
+    margin-left: 5%;
+}
 
 .nav-food {
     display: flex;

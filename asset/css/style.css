@@ -978,8 +978,8 @@ footer img {
 
 .nav-food {
     display: flex;
-    justify-content: space-between;
-    padding-top: 75px;
+    justify-content: space-around;
+    padding-top: 65px;
     position: fixed;
 }
 
@@ -1011,13 +1011,6 @@ footer img {
     width: 60%;
 }
 
-.card-image {
-    height: 110px;
-    width: 25%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    margin-top: 5opx;
-}
 
 .meat>.card,
 .dessert>.card {
@@ -1060,7 +1053,7 @@ footer img {
 
 .scroll {
     display: flex;
-    justify-content: space-between;
+   
     padding-top: 75px;
     position: fixed;
     width: 100%;
@@ -1201,8 +1194,10 @@ div.carousel-nav {
 
 .nav-food {
     display: flex;
-    justify-content: space-between;
-    padding-top: 75px;
+
+    padding-top: 65px;
+    width: 100%;
+    font-size: 12px;
 }
 
 .nav-food>a {
@@ -1219,21 +1214,11 @@ div.carousel-nav {
     align-items: center;
 }
 
-.entrance,
-.meat,
-.fish,
-.dessert {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--second-color);
-    font-size: 2em;
-    padding-top: 75px;
-}
+
 
 .card-image {
-    height: 110px;
-    width: 25%;
+  
+    width: 35%;
     background-size: 150%;
     background-repeat: no-repeat;
     margin-top: 5opx;
@@ -1263,6 +1248,7 @@ div.carousel-nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: relative;
 }
 
 .card-body {
@@ -1284,9 +1270,8 @@ div.carousel-nav {
 
 .scroll {
     display: flex;
-    justify-content: space-between;
     position: fixed;
-    padding-top: 50px;
+    padding-top: 75px;
     width: 100%;
     z-index: 999;
 }
@@ -1403,11 +1388,12 @@ div.carousel-nav {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
+        align-items: center;
     }
     .card-name,
     .card-price {
         color: var(--second-color);
-        font-size: 0.8em;
+        font-size: 0.6em;
         margin: 6px;
         width: 66%;
     }
@@ -1441,9 +1427,9 @@ div.carousel-nav {
     }
     .nav-food {
         display: flex;
-        justify-content: space-between;
+       
         position: relative;
-        padding-top: 50px;
+        padding-top: 65px;
     }
     .nav-food>a {
         background-color: var(--main-color);
@@ -1467,12 +1453,16 @@ div.carousel-nav {
         align-items: center;
         color: var(--second-color);
         font-size: 2em;
-        padding-top: 150px;
     }
     .card-body {
         height: 90%;
         width: 60%;
     }
+
+    .nav-food > a {
+        font-size: 16px;
+    }
+
     .card-image {
         height: 90%;
         width: 33%;
@@ -1506,20 +1496,17 @@ div.carousel-nav {
     .card-name,
     .card-price {
         color: var(--second-color);
-        font-size: 1em;
         margin: 10px;
         width: 66%;
     }
     .card-description {
-        font-size: 0.8em;
         padding: 5px 5px 5px 15px;
         color: var(--color-title);
     }
     .scroll {
         display: flex;
-        justify-content: space-between;
         position: fixed;
-        padding-top: 50px;
+        padding-top: 75px;
         width: 100%;
         z-index: 999;
     }
@@ -1554,10 +1541,10 @@ div.carousel-nav {
         }
         .nav-food {
             display: flex;
-            justify-content: space-between;
+           
             align-items: center;
             position: relative;
-            padding-top: 50px;
+            padding-top: 65px;
         }
         .nav-food>a {
             background-color: var(--main-color);
@@ -1574,7 +1561,7 @@ div.carousel-nav {
         }
         .dish-title {
             width: 100%;
-            font-size: 2em;
+            font-size: 1.2em;
             margin-left: 150px;
         }
         .entrance,
@@ -1597,9 +1584,9 @@ div.carousel-nav {
             box-shadow: var(--box-shadow);
             border: 1px solid black;
             border-radius: 15px;
-            height: 600px;
-            width: 33%;
-            margin: 50px 50px;
+            height: 360px;
+            width: 30%;
+            margin: 50px 0px;
         }
         .meat>.card,
         .dessert>.card {
@@ -1614,21 +1601,21 @@ div.carousel-nav {
             height: 60%;
         }
         .card-image {
-            height: 40%;
-            width: 75%;
+            max-height: 40%;
+            max-width: 75%;
             background-size: 150%;
             background-repeat: no-repeat;
             margin-top: 5px;
+            min-width: 60%;
         }
         .card-name,
         .card-price {
             color: var(--second-color);
-            font-size: 1.2em;
+           font-size: 0.8em;
             padding: 17px 0;
             width: 335px;
         }
         .card-description {
-            font-size: 0.9em;
             padding: 5px 5px 5px 10px;
             color: var(--color-title);
         }
@@ -1637,7 +1624,7 @@ div.carousel-nav {
         }
         .scroll {
             display: flex;
-            justify-content: space-between;
+           
             position: fixed;
             width: 100%;
             z-index: 999;
@@ -1716,15 +1703,16 @@ div.carousel-nav {
         }
         .dish-title {
             width: 100%;
-            font-size: 2em;
+            font-size: 1.4em;
             margin-left: 175px;
         }
         .card-image {
-            height: 40%;
-            width: 75%;
+            max-height: 40%;
+            max-width: 75%;
             background-size: 150%;
             background-repeat: no-repeat;
             margin-top: 5px;
+            min-width: 33%;
         }
         .card-body {
             height: 60%;
@@ -1733,17 +1721,18 @@ div.carousel-nav {
         .card-name,
         .card-price {
             color: var(--second-color);
-            font-size: 1.2em;
-            margin: 8px 15%;
-            width: 335px;
+            font-size: 0.8em;
+            margin: 8px auto;
+            text-align: center;
         }
         .card-description {
-            font-size: 0.9em;
+            font-size: 0.6em;
             padding: 5px 5px 5px 15px;
             color: var(--color-title);
+            text-align: center;
         }
         .card-price {
-            margin-left: 80%;
+            text-align: center;
         }
         .card {
             display: flex;
@@ -1753,9 +1742,9 @@ div.carousel-nav {
             box-shadow: var(--box-shadow);
             border: 1px solid black;
             border-radius: 15px;
-            height: 600px;
-            width: 27%;
-            margin: 50px 50px;
+            height: 365px;
+            width: 30%;
+            margin: 50px 0px;
         }
         .scroll {
             display: flex;
@@ -1791,52 +1780,11 @@ div.carousel-nav {
             margin: 0 auto;
             display: block;
         }
-        .dish-title {
-            width: 100%;
-            font-size: 2em;
-            margin-left: 200px;
-        }
-        .card-image {
-            height: 40%;
-            width: 75%;
-            background-size: 150%;
-            background-repeat: no-repeat;
-            margin-top: 5opx;
-        }
-        .card-body {
-            height: 60%;
-            width: 90%;
-        }
-        .card-name,
-        .card-price {
-            color: var(--second-color);
-            font-size: 1.4em;
-            margin: 30px 25%;
-            width: 335px;
-        }
-        .card-price {
-            margin-left: 80%;
-        }
-        .card-description {
-            font-size: 1em;
-            padding: 5px 5px 5px 10px;
-            color: var(--color-title);
-        }
-        .card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: var(--main-color);
-            box-shadow: var(--box-shadow);
-            border: 1px solid black;
-            border-radius: 15px;
-            height: 700px;
-            width: 22%;
-            margin: 50px 50px;
-        }
+
+       
         .scroll {
             display: flex;
-            justify-content: space-between;
+            
             position: fixed;
             width: 100%;
             z-index: 999;

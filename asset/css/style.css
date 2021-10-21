@@ -981,6 +981,7 @@ footer img {
     justify-content: space-around;
     padding-top: 65px;
     position: fixed;
+    background-color: var(--main-color);
 }
 
 .nav-food>a {
